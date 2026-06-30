@@ -1,0 +1,8 @@
+package Day1;
+
+class MemoryDemo {
+    public static void main(String[] args) {
+        String s = new String("Java");
+        System.out.println(s);
+    }
+}
