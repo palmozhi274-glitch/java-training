@@ -12,18 +12,15 @@ public class ImplementQueuesusingStack {
         s2 = new Stack<>();
     }
 
-    // Push element to the back of queue
     public void push(int x) {
         s1.push(x);
     }
 
-    // Remove the front element
     public int pop() {
         peek();
         return s2.pop();
     }
 
-    // Get the front element
     public int peek() {
         if (s2.isEmpty()) {
             while (!s1.isEmpty()) {
@@ -33,7 +30,6 @@ public class ImplementQueuesusingStack {
         return s2.peek();
     }
 
-    // Check if queue is empty
     public boolean empty() {
         return s1.isEmpty() && s2.isEmpty();
     }
